@@ -1,0 +1,17 @@
+mkdir edu-integration-demo
+cd edu-integration-demo
+npm init -y
+npm install express passport passport-google-oauth20 dotenv google-classroom axios express-session googleapis cors
+node src/server.js
+
+# Remove the client directory if it was partially created
+rm -rf client
+
+# Create a new React app with Vite instead
+npm create vite@latest client -- --template react
+cd client
+npm install
+npm install @chakra-ui/react@2.8.2 @chakra-ui/icons@2.1.1 @emotion/react@11.11.3 @emotion/styled@11.11.0 framer-motion@10.18.0
+npm install axios
+npm install @chakra-ui/icons react-icons
+npm run dev

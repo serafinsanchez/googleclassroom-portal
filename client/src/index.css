@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom styles */
+.writing-analyzer {
+  @apply max-w-4xl mx-auto p-6 bg-gradient-to-b from-blue-50 to-purple-50;
+}
+
+.analyzer-button {
+  @apply w-full mb-8 py-4 px-6 rounded-lg text-white font-bold text-lg transition-all duration-200;
+}
+
+.analyzer-button-loading {
+  @apply bg-gray-400 cursor-not-allowed;
+}
+
+.analyzer-button-ready {
+  @apply bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg p-6;
+}
+
+.card-header {
+  @apply text-xl font-bold mb-4 flex items-center;
+}
+
+.icon {
+  @apply h-5 w-5;
+}
