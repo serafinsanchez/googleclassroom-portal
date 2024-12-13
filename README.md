@@ -2,7 +2,6 @@
 
 A modern, user-friendly interface for managing Google Classroom courses, built with React, Vite, and Chakra UI.
 
-![Classroom Assistant Interface](screenshot.png)
 
 ## 🎯 Features
 
